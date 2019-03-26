@@ -1,10 +1,13 @@
-package com.gerenciador_negocios_integrado.app;
+package com.gerenciador_negocios_integrado.app.objects;
 
 public class User {
 
     private String email, name, lastName, password;
 
-    public User(String email,String name, String lastName, String password){
+    public User() {
+    }
+
+    public User(String email, String name, String lastName, String password){
 
         this.email = email;
         this.name = name;

@@ -1,4 +1,4 @@
-package com.gerenciador_negocios_integrado.app;
+package com.gerenciador_negocios_integrado.app.dataBase;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -17,11 +17,11 @@ public class Connection extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("create table user(id integer primary key autoincrement;" +
-                                     "email varchar(50); name varchar(50); " +
-                                     "last_name varchar(50); " +
-                                     "password varchar(10); )");
-
+        db.execSQL("create table user(id integer primary key autoincrement," +
+                                     "name varchar(50), " +
+                                     "last_name varchar(50), " +
+                                     "email varchar(50), " +
+                                     "password varchar(10))");
     }
 
     @Override
