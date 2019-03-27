@@ -5,7 +5,7 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.LoginActivity" >
+    tools:context=".View.activity.LoginActivity" >
 
     <android.support.v7.widget.CardView
         android:layout_width="0dp"
@@ -28,52 +28,48 @@
             android:id="@+id/cardLogin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="8dp">
+            android:layout_margin="8dp"
+            android:padding="8dp">
 
             <EditText
                 android:id="@+id/emailTextViewCadastro"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:ems="10"
                 android:hint="E-mail"
                 android:inputType="textEmailAddress"
                 android:textColorHighlight="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimaryDark"
-                app:layout_constraintEnd_toEndOf="@+id/lastNameTextCadastro"
-                app:layout_constraintStart_toStartOf="@+id/lastNameTextCadastro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lastNameTextCadastro" />
 
             <EditText
                 android:id="@+id/passwordTextViewCadastro"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
                 android:hint="Senha"
                 android:inputType="numberPassword"
                 android:textColorHint="@color/colorPrimaryDark"
-                app:layout_constraintEnd_toEndOf="@+id/emailTextViewCadastro"
-                app:layout_constraintStart_toStartOf="@+id/emailTextViewCadastro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/emailTextViewCadastro" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="23dp"
-                android:layout_margin="8dp"
-                android:text="Esqueci minha senha"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintEnd_toEndOf="@+id/passwordTextViewCadastro"
-                app:layout_constraintStart_toStartOf="@+id/passwordTextViewCadastro"
-                app:layout_constraintTop_toBottomOf="@+id/passwordTextViewCadastro" />
 
             <EditText
                 android:id="@+id/nameTextCadastro"
-                android:layout_width="215dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_marginStart="8dp"
@@ -92,7 +88,7 @@
 
             <EditText
                 android:id="@+id/lastNameTextCadastro"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_marginStart="8dp"
@@ -106,8 +102,8 @@
                 android:textColorHighlight="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:textColorLink="@color/colorPrimaryDark"
-                app:layout_constraintEnd_toEndOf="@+id/nameTextCadastro"
-                app:layout_constraintStart_toStartOf="@+id/nameTextCadastro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nameTextCadastro" />
 
             <Button
@@ -117,13 +113,16 @@
                 android:layout_margin="16dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:background="@color/colorPrimaryDark"
                 android:text="Voltar"
+                android:textColor="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/registerUserForm"
-                app:layout_constraintStart_toStartOf="@+id/passwordTextViewCadastro"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintHorizontal_bias="0.989"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordTextViewCadastro" />
 
             <TextView
                 android:id="@+id/textView"
@@ -146,13 +145,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginRight="12dp"
+                android:layout_marginEnd="72dp"
+                android:layout_marginRight="72dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorPrimaryDark"
                 android:text="Cadastrar"
-                app:layout_constraintBottom_toBottomOf="@+id/backLoginBtn"
-                app:layout_constraintEnd_toEndOf="@+id/passwordTextViewCadastro"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
-                app:layout_constraintVertical_bias="1.0" />
+                android:textColor="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordTextViewCadastro" />
 
         </android.support.constraint.ConstraintLayout>
 

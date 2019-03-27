@@ -22,6 +22,10 @@ public class Connection extends SQLiteOpenHelper {
                                      "last_name varchar(50), " +
                                      "email varchar(50), " +
                                      "password varchar(10))");
+
+        db.execSQL("create table tipo(id integer primary key autoincrement," +
+                                                "tipo varchar(50)," +
+                                                "nome varchar(50))");
     }
 
     @Override

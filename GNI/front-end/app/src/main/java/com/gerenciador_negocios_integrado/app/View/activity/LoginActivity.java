@@ -1,4 +1,4 @@
-package com.gerenciador_negocios_integrado.app.activity;
+package com.gerenciador_negocios_integrado.app.View.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.gerenciador_negocios_integrado.app.R;
 import com.gerenciador_negocios_integrado.app.dataBase.DAO.UserDao;
-import com.gerenciador_negocios_integrado.app.objects.User;
+import com.gerenciador_negocios_integrado.app.model.User;
 
 import java.util.List;
 

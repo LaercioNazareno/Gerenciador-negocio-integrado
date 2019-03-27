@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.gerenciador_negocios_integrado.app.dataBase.Connection;
-import com.gerenciador_negocios_integrado.app.objects.User;
+import com.gerenciador_negocios_integrado.app.model.User;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.gerenciador_negocios_integrado.app.objects;
+package com.gerenciador_negocios_integrado.app.model;
 
 public class User {
 
